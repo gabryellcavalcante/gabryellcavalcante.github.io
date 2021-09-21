@@ -1,8 +1,7 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background: rgb(139,64,182);
     background: linear-gradient(180deg, rgba(139,64,182,1) 0%, rgba(184,0,0,1) 76%, rgba(255,145,0,1) 100%);
-    padding: 10px 10px 100px 10px;
+    padding: 85px;
 }
 
 input[type=text],select{
@@ -13,6 +12,7 @@ input[type=text],select{
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
+    background-color: #ffffffbe;
 }
 
 input[type=submit]{
@@ -20,7 +20,7 @@ input[type=submit]{
     padding: 14px 20px;
     margin: 8px 0;
     background-color: #9a5acf;
-    color: white;
+    color: #111111be;
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -28,20 +28,22 @@ input[type=submit]{
 
 input[type=submit]:hover{
     background-color: #9927db;
-
 }
 
 
 div{
     border-radius: 20px 40px;
-    background-color: #f2f2f2;
+    background-color: #f2f2f2be ;
     padding: 20px;
-    margin-left: 30%;
-    margin-right: 30%;
+    margin-left: 35%;
+    margin-right: 35%;
+    text-align: center;
 }
+
+
 
 h3 {
     text-align: center;
     font-size: 45px;
-    color: white;
+    color: #000000;
 }
