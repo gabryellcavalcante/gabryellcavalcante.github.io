@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script src="script.js"></script>
+   <h3>
+       Matrícula do Aluno
+   </h3> 
+
+   <div>
+       <form action="">
+            <label for="">Nome</label>
+            <input type="text" id="name" name="name" placeholder="Insira seu nome completo" required> 
+
+            <label for="">Matricula</label>
+            <input type="text" id="Matricula" name="matricula" placeholder="Insira seu nome completo" required> 
+
+            <label for="">Curso</label>
+            <select name="curso" id="curso">
+                <option value="ads">Análise e desenvolvimento de sistemas</option>
+                <option value="engcomp">Engenharia da computação</option>
+                <option value="redes">Redes</option>
+            </select>
+
+            <label for="">Turno</label>
+            <select name="turno" id="turno" placeholder="Selecione o Curso">
+                <option value="manha">Manhã</option>
+                <option value="tarde">Tarde</option>
+                <option value="noite">Noite</option>
+                <option value="integral">Integral</option>
+            </select>
+
+            <input type="submit" value="Enviar">
+        </form>
+   </div>
+
+</body>
+</html>
