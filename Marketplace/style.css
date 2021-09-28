@@ -15,14 +15,15 @@ body{
 
 div .card{
     border-radius: 10px;
-    background-color: #f2f2f2be ;
-    padding: 12px;
-    text-align: center;
+    padding: 10px;
     margin: 12px;
+    background-color: #f2f2f2be ;
 }
 
 img {
     width: 50%;
+    display: block;
+    margin: auto;
 }
 
 div .p {
