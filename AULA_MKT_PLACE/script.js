@@ -17,6 +17,30 @@ const items = [
         img: 'cam1.jpg',
         quantidade: 0
     },
+    {
+        id: 3,
+        nome: 'meia',
+        img: 'cam1.jpg',
+        quantidade: 0
+    },
+    {
+        id: 4,
+        nome: 'bota',
+        img: 'cam1.jpg',
+        quantidade: 0
+    },
+    {
+        id: 5,
+        nome: 'cinto',
+        img: 'cam1.jpg',
+        quantidade: 0
+    },
+    {
+        id: 6,
+        nome: 'boné',
+        img: 'cam1.jpg',
+        quantidade: 0
+    },
 
 ]
     inicializarLoja = () => {
@@ -37,12 +61,7 @@ const items = [
         })
     }
 
-    inicializarLoja();
-
-    atualizarCarrinho = () => {
-        console.log(items);
-    }
-        
+    inicializarLoja();        
 
     var links = document.getElementsByTagName('a');
 
