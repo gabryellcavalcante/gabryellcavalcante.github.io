@@ -20,8 +20,52 @@ const items = [
 
 ]
     inicializarLoja = () => {
-        var containerProtudos = document.getElementById('produtos');
+        var containerProdutos = document.getElementById('produtos');
         items.map((val)=>{
-            console.log(val.nome);
+            containerProdutos.innerHTML += `
+
+            <div class="produto-single">
+                <img src="`+val.img+`"/>
+                <p>`+val.nome+`<p>
+                <button>
+                    <a key="`+val.id+`" href="#"> Adicionar ao Carrinho! <a/>
+                </button>
+            </div>
+
+            
+            `;
         })
+    }
+
+    inicializarLoja();
+
+    atualizarCarrinho = () => {
+        console.log(items);
+    }
+        
+
+    var links = document.getElementsByTagName('a');
+
+    for(var i = 0; i < links.length; i++){
+        links[i].addEventListener("click",function(){
+            let key = this.getAttribute('key');
+            items[key].quantidade++;
+            atualizarCarrinho();
+            return false; 
+        })
+    }
+
+    atualizarCarrinho = () => {
+        var containerCarrinho = document.getElementById('carrinho');
+        containerCarrinho.innerHTML = "";
+            items.map((val)=>{
+                if(val.quantidade > 0){
+                containerCarrinho.innerHTML += `
+
+                <p>`+val.nome+` | quantidade:`+val.quantidade+`</p>
+                <hr>
+                
+                `;
+                }
+            })
     }
